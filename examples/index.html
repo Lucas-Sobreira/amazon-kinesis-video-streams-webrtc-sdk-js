@@ -15,6 +15,13 @@
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./aws-sdk-3.758.0-kvswebrtc.js"></script>
     <link rel="icon" type="image/png" href="favicon.ico">
+
+    <!-- SDK WebRTC da AWS (deve vir antes dos scripts que a usam!) -->
+    <script src="https://unpkg.com/amazon-kinesis-video-streams-webrtc/dist/kvs-webrtc.min.js"></script>
+
+    <!-- Seus scripts -->
+    <script src="channelHelper.js"></script>
+    <script src="master.js"></script>
 </head>
 <body>
 
@@ -483,12 +490,12 @@
 
 <div id="test"></div>
 
-<script src="../kvs-webrtc.js"></script>
+<!-- <script src="https://unpkg.com/amazon-kinesis-video-streams-webrtc/dist/kvs-webrtc.min.js"></script> -->
 <script src="./app.js"></script>
-<script src="./channelHelper.js"></script>
+<!-- <script src="./channelHelper.js"></script> -->
 <script src="./mediaHelper.js"></script>
 <script src="./answerer.js"></script>
-<script src="./master.js"></script>
+<!-- <script src="./master.js"></script> -->
 <script src="./viewer.js"></script>
 <script src="./createSignalingChannel.js"></script>
 <script src="./listStorageChannels.js"></script>
